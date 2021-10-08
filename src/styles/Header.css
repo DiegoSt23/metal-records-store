@@ -1,0 +1,68 @@
+.header {
+  width: 100%;
+  padding: 20px 30px 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: rgb(20, 21, 26);
+  z-index: 1;
+}
+.logo-container {
+  width: 200px;
+}
+.logo {
+  width: 100%;
+}
+.options {
+  width: 25%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.total-products {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: -15px;
+  top: -10px;
+  font-size: 0.8rem;
+  padding-top: 1px;
+  font-weight: bold;
+  border-radius: 15px;
+  background-color: #ac9b51;
+  color: black;
+}
+.option {
+  text-decoration: none;
+  color: gray;
+  transition: all ease 0.3s;
+}
+.selected {
+  text-decoration: none;
+  color: #ac9b51;
+  transition: all ease 0.3s;
+}
+
+/* //////////Responsive Design////////// */
+
+@media screen and (max-width: 992px) {
+  .options {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header {
+    padding: 15px 20px 10px 10px;
+  }
+  .logo-container {
+    width: 150px;
+  }
+  .options {
+    width: 50%;
+  }
+}

@@ -1,0 +1,121 @@
+.shopping-cart-message-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.link {
+  color: #ac9b51;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.shopping-cart-container {
+  width: 80%;
+  margin: auto;
+  padding: 30px;
+  color: white;
+  border: solid 1px #ac9b51;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 40px;
+}
+.shopping-cart-container h2 {
+  color: #ac9b51;
+}
+.added-products-container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: rgb(29, 30, 34);
+  padding: 30px;
+  margin-top: 30px;
+}
+.total-price-container {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  border: solid 1px #ac9b51;
+  padding: 20px;
+}
+.price-sub {
+  text-align: left;
+}
+.added-product-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px gray;
+}
+.container-1 {
+  width: 40%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.container-2 {
+  width: 20%; 
+  text-align: center;
+}
+.added-image-container {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.added-image {
+  width: 100%;
+}
+.added-details-container {
+  width: 60%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.added-details-container h3 {
+  color: #ac9b51;
+}
+
+/* //////////Responsive Design////////// */
+
+@media screen and (max-width: 992px) {
+  .shopping-cart-container {
+    width: 90%;
+  }
+  .added-details-container {
+    font-size: 0.9rem;
+  }
+  .total-price-container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .shopping-cart-container {
+    padding: 10px;
+  }
+  .added-products-container {
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .container-1 {
+    flex-direction: column;
+  }
+  .added-image-container {
+    width: 100%;   
+  }
+  .added-details-container {
+    width: 100%;
+  }
+  .total-price-container {
+    width: 100%;
+  }
+}

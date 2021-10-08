@@ -1,0 +1,137 @@
+.products-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.banner {
+  width: 100%;  
+  margin-top: 30px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(179, 156, 26), rgb(120, 17, 255));
+  padding: 60px 10px 10px 10px;
+}
+.metal-records-logo-container {
+  width: 20%;
+}
+.metal-records-logo {
+  width: 100%;
+}
+.banner p {
+  font-weight: bold;
+}
+.close-icon-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.close-banner-icon {
+  cursor: pointer;
+}
+.products-title {
+  color: #ac9b51;
+  text-align: center;
+}
+.product-container {
+  width: 31%;
+  display: flex;
+  margin-top: 40px;
+  flex-direction: column;
+  border: solid 1px #ac9b51;
+  padding-bottom: 15px;
+  color: white;
+}
+.product-container p {
+  color: gray;
+  font-weight: bolder;
+}
+.image-container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0; 
+  color: transparent;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.image-container:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.3s;
+  color: white;
+}
+.add-icon {
+  color: #ac9b51;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.add-icon:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.forbidden-icon {
+  color: #ac9b51;
+  font-size: 1.4rem;
+}
+.info-container {
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+}
+.info-container h3 {
+  color: #ac9b51;
+}
+.actions-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/* //////////Responsive Design////////// */
+
+@media screen and (max-width: 992px) {
+  .banner {
+    padding-top: 80px;
+  }
+  .metal-records-logo-container {
+    width: 30%;
+  }
+  .product-container {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .banner {
+    padding-top: 60px;
+  }
+  .products-container {
+    width: 90%;
+  }
+  .product-container {
+    width: 100%;
+  }
+  .metal-records-logo-container {
+    width: 50%;
+  }
+}

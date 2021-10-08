@@ -1,0 +1,103 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000000e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1;
+}
+.album-details-container {
+  width: 80%;
+  display: flex;
+  border: solid 1px #ac9b51;
+  background-color: rgb(20, 21, 26)
+}
+.album-details-container h1 {
+  color: #ac9b51;
+}
+.art-container {
+  width: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.full-size-image {
+  width: 100%;
+}
+.main-info-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  color: white;
+  padding: 60px;
+}
+.info-sub-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.details-container {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.description-container {
+  margin-top: 30px;
+  overflow-y: auto;
+}
+.close-icon-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.close-icon {
+  color: #ac9b51;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* //////////Responsive Design////////// */
+
+@media screen and (max-width: 992px) {
+  .album-details-container {
+    width: 95%;
+    padding: 10px;
+  }
+  .main-info-container {
+    padding: 10px 0px 10px 20px;  
+  }
+  .details-container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .album-details-container {
+    flex-direction: column;
+  }
+  .main-info-container {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  .art-container {
+    width: 100%;
+  } 
+  .full-size-image {
+    width: 50%;
+  }
+  .details-container {
+    width: 100%;
+  }
+}
