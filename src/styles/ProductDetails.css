@@ -99,4 +99,7 @@
   .details-container {
     width: 100%;
   }
+  .close-icon-container {
+    margin-top: 20px;
+  }
 }
