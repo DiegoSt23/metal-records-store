@@ -92,14 +92,15 @@
   }
   .art-container {
     width: 100%;
+    padding-top: 10px;
   } 
   .full-size-image {
     width: 50%;
   }
   .details-container {
     width: 100%;
-  }
+    }
   .close-icon-container {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
